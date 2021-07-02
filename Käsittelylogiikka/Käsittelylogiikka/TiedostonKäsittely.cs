@@ -26,6 +26,23 @@ namespace Käsittelylogiikka
                 throw;
             }
         }
+        string lokinSijainti;
+        if (DirectoryInfo.Exists("c:\\temp\\"))
+        { 
+            lokinSijainti = "c:\\temp\\"; 
+        }
+        else 
+        {
+            Directory.Create("c:\\temp\\");
+            lokinSijainti = "c:\\temp\\";
+        }
+
+public void Testi()
+{
+    Console.WriteLine(Testimuokkaus);
+    //kokeillaan
+    //kokeillaan kans
+}
     }
 
     public class TestejaOsa2
