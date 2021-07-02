@@ -7,6 +7,7 @@ namespace Käsittelylogiikka
         public void Testi()
         {
             Console.WriteLine(Testimuokkaus);
+            Console.WriteLine("Nooran testimuokkaus");
         }
     }
 }
