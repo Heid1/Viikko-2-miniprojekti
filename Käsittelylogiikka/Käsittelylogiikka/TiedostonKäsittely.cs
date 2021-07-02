@@ -1,10 +1,31 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace Käsittelylogiikka
 {
     public class TiedostonKäsittely
     {
+        public List<List<string>> kurssikuvaukset { get; set; }
+
+        public void LueTiedosto(string tiedostopolku)
+        {
+            try
+            {
+                var rivit = File.ReadAllLines(tiedostopolku);
+                foreach (var rivi in rivit)
+                {
+                    var kuvaukset = rivi.Split(';').ToList();
+                    kurssikuvaukset.Add(kuvaukset);
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
         string lokinSijainti;
         if (DirectoryInfo.Exists("c:\\temp\\"))
         { 
@@ -16,12 +37,12 @@ namespace Käsittelylogiikka
             lokinSijainti = "c:\\temp\\";
         }
 
-        public void Testi()
-        {
-            Console.WriteLine(Testimuokkaus);
-            //kokeillaan
-            //kokeillaan kans
-        }
+public void Testi()
+{
+    Console.WriteLine(Testimuokkaus);
+    //kokeillaan
+    //kokeillaan kans
+}
     }
 
     public class TestejaOsa2
