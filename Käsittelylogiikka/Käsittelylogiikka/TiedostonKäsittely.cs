@@ -5,7 +5,16 @@ namespace Käsittelylogiikka
 {
     public class TiedostonKäsittely
     {
-        if (DirectoryInfo.GetDirectory("c:\\temp\\"))
+        string lokinSijainti;
+        if (DirectoryInfo.Exists("c:\\temp\\"))
+        { 
+            lokinSijainti = "c:\\temp\\"; 
+        }
+        else 
+        {
+            Directory.Create("c:\\temp\\");
+            lokinSijainti = "c:\\temp\\";
+        }
 
         public void Testi()
         {
