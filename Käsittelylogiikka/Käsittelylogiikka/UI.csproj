@@ -5,4 +5,11 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+	<ItemGroup>
+		<PackageReference Include="Kurssi" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="TiedostonKäsittely" />
+	</ItemGroup>
+
 </Project>

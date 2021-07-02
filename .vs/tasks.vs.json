@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-Kurssi",
+      "appliesTo": "Käsittelylogiikka/Käsittelylogiikka/Kurssi.cs",
+      "type": "launch"
+    }
+  ]
+}
