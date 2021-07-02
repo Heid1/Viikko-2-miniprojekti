@@ -20,5 +20,16 @@ namespace Käsittelylogiikka
                                     "569947;AZ-301 Azure Solutions Architect Design;18.11.2019;20.11.2019;Online;;Opi suunnittelemaan Azure-ympäristö ja sen arkkitehtuuri.Tämä kurssi tarjoaa syventävää osaamista erityisesti sovellusarkkitehdeille.; True;Technology;Infra;Microsoft Cloud-services;" };
 
         public void Alkupaiva()
+        {
+
+        }
+        public void MaksimiPituus(string kuvaus)
+        {
+            if(kuvaus > 500)
+            {
+
+            }
+        }
+
     }
 }
