@@ -1,9 +1,12 @@
 ﻿using System;
+using System.IO;
 
 namespace Käsittelylogiikka
 {
     public class TiedostonKäsittely
     {
+        if (DirectoryInfo.GetDirectory("c:\\temp\\"))
+
         public void Testi()
         {
             Console.WriteLine(Testimuokkaus);
