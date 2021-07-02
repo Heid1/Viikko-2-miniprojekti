@@ -27,7 +27,7 @@ namespace Käsittelylogiikka
         {
             if(kuvaus > 500)
             {
-
+                //viedään lokiin
             }
         }
 
