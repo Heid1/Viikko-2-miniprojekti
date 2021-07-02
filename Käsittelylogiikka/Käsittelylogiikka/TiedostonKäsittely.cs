@@ -6,7 +6,7 @@ namespace Käsittelylogiikka
     {
         public void Testi()
         {
-
+            Console.WriteLine(Testimuokkaus);
         }
     }
 }
