@@ -8,6 +8,7 @@ namespace Käsittelylogiikka
         {
             Console.WriteLine(Testimuokkaus);
             //kokeillaan
+            //kokeillaan kans
         }
     }
 }
